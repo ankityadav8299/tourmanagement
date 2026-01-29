@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-const defaultConfig = require("shadcn/ui/tailwind.config")
+const defaultConfig = require("shadcn/ui/tailwind.config");
 
 module.exports = {
   ...defaultConfig,
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     ...defaultConfig.theme,
     extend: {
@@ -51,4 +51,4 @@ module.exports = {
     },
   },
   plugins: [...defaultConfig.plugins, require("tailwindcss-animate")],
-}
+};
