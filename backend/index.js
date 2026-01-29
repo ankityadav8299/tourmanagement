@@ -10,10 +10,6 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// ✅ FIXED CORS
-const cors = require("cors");
-
 app.use(
   cors({
     origin: ["https://easytrips-sigma.vercel.app"],
@@ -22,9 +18,6 @@ app.use(
   }),
 );
 
-app.options("*", cors());
-
-// ✅ FIXED PREFLIGHT
 app.options("*", cors());
 
 app.use(cookieParser());
