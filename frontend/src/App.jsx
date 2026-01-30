@@ -20,7 +20,7 @@ import { AuthProvider } from './context/AuthContext'
 import AddDestination from "./pages/AddDestination"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css"
+import "./App.css";
 
 function AppRoutes() {
   return (
